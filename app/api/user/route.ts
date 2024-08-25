@@ -8,7 +8,7 @@ export async function GET(req:NextRequest){
     const user = await client.user.findFirst();
 
     return  Response.json({
-        name:'dada',
+        name:'',
         email: user?.username
     })
 }

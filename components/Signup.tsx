@@ -25,7 +25,7 @@ export  function Signup() {
                             setPassword(e.target.value)
                         }} label="Password" type={"password"} placeholder="123456" />
                         <button onClick={async()=>{
-                          await axios.post("http://localhost:3000/api/user",{
+                          await axios.post("http://localhost:3001/api/user",{
                                 username,
                                 password
                             })

@@ -3,7 +3,7 @@ import axios from "axios";
 
 async function getUserData(){
   await new Promise((r)=>setTimeout(r,2000)) 
-  const response = await axios.get("http://localhost:3001/api/user")
+  const response = await axios.get("http://localhost:3004/api/user")
   return response.data;
 }
 

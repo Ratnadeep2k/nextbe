@@ -8,12 +8,12 @@ export async function GET(req:NextRequest){
     const user = await client.user.findFirst();
 
     return  Response.json({
-        name:'',
+        name:'Ratnadeep',
         email: user?.username
     })
 }
 export async function POST(req:NextRequest){
-    //database logic 
+    //database logic  
     //extract the body
     const body = await req.json();
     try {
@@ -29,6 +29,7 @@ export async function POST(req:NextRequest){
         })
         
     } catch (error) {
+        console.log(error)
        return Response.json({
               message:error
        })
